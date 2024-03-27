@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ccc; 
+    padding-bottom: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.menu-bar {
+    background-color: #2b58eb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.menuOptions {
+    display: flex;
+}
+
+.menu {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.center-div {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.image-div {
+    position: relative;
+    max-width: 200px; 
+    overflow: hidden; 
+    margin: 20px auto; 
+}
+
+.image-div img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.image-info {
+    
+    
+    text-align: center;
+    
+}
+
+.image-title{
+    font-weight: bold;
+}
+
+
+.pressable-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #2b58eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-table {
+    width: 55%;
+    background-color: transparent; 
+    margin: 20px auto; 
+    border-spacing: 10px; 
+}
+
+.image-table td {
+    
+    text-align: center;
+    background-color: #fff; 
+
+}
+
+
+
+.footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .image-table td {
+        width: 300px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .center-div {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        height: 100vh; 
+
+    }
+    
+
+    .image-div {
+        flex:45%;
+        max-width: 75%;
+    }
+
+    .image-table {
+        
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .center-div {
+        display: block;
+    }
+
+    .center-div table {
+        width: 100%; 
+    }
+
+    .center-div table tr {
+        display: block;
+        margin-bottom: 10px; 
+    }
+
+    .center-div table td {
+        display: block;
+        margin-bottom: 10px; 
+
+    }
+}
