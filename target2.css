@@ -1,4 +1,4 @@
-body {
+body { /*This is the basic design of the html body*/
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #ccc; 
@@ -9,7 +9,7 @@ body {
     min-height: 100vh; 
 }
 
-.menu-bar {
+.menu{ /*The menu bar design*/
     background-color: #2b58eb;
     padding: 10px;
     display: flex;
@@ -18,12 +18,16 @@ body {
     width: 100%;
 }
 
+/*logo*/
+
 .logo {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
 }
+
+/*The search input*/
 
 .search input[type="text"] {
     padding: 8px;
@@ -32,48 +36,51 @@ body {
     border-radius: 5px;
 }
 
+/*The menu option*/
+
 .menuOptions {
     display: flex;
 }
 
-.menu {
+/*The menu links design*/
+
+.menu1 {
     margin-right: 15px;
     text-decoration: none;
     color: #fff;
 }
 
-.center-div {
+/*image section*/
+
+.container {
     margin-top: 20px;
-    text-align: center;
-    
+    margin-left: 90px;
 }
 
-.image-div {
+.imagebox {
     position: relative;
     max-width: 200px; 
     overflow: hidden; 
     margin: 20px auto; 
 }
 
-.image-div img {
+.imagebox img {
     width: 100%; 
     height: auto;
     display: block;
 }
 
-.image-info {
-    
-    
+.info {
     text-align: center;
     
 }
 
-.image-title{
+.title{
     font-weight: bold;
 }
 
 
-.pressable-button {
+.pressbtn {
     padding: 8px 16px;
     font-size: 14px;
     background-color: #2b58eb;
@@ -97,7 +104,7 @@ body {
 
 }
 
-
+/*footer*/
 
 .footer {
     position: fixed; 
@@ -111,7 +118,7 @@ body {
 }
 
 
-
+/*Responsiveness on different screens*/
 
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
@@ -122,16 +129,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .center-div {
+    .container{
         display: flex;
         flex-wrap: wrap; 
         justify-content: center; 
         height: 100vh; 
 
     }
-    
-
-    .image-div {
+    .imagebox {
         flex:45%;
         max-width: 75%;
     }
@@ -143,20 +148,30 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .center-div {
+    .container {
         display: block;
     }
+    .logo{
+        font-size: 20px;
+    }
+    .menu{
+        background-color: #2b58eb;
+        display: flex;
+        width: 550px;
+    }
 
-    .center-div table {
+    
+
+    .container table {
         width: 100%; 
     }
 
-    .center-div table tr {
+    .container table tr {
         display: block;
         margin-bottom: 10px; 
     }
 
-    .center-div table td {
+    .container table td {
         display: block;
         margin-bottom: 10px; 
 

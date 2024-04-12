@@ -7,72 +7,74 @@
 </head>
 <body>
 
-    <div class="menu-bar">
+    <div class="menu">
         <a href="#" class="logo">What'son</a> <!--This is the link to access the logo.-->
+
         <div class="search">
             <input type="text" name="search" placeholder="Search...">
         </div>
+
         <div class="menuOptions">   <!--These are the options available in the menu bar-->
-            <a href="#" class="menu">Movies</a>
-            <a href="#" class="menu">TV</a>
-            <a href="#" class="menu">Log In</a>
-            <a href="#" class="menu">Register</a>
+            <a href="#" class="menu1">Movies</a>
+            <a href="#" class="menu1">TV</a>
+            <a href="#" class="menu1">Log In</a>
+            <a href="#" class="menu1">Register</a>
         </div>
     </div>
 
-    <div class="center-div">
-        <div class="image-div">
-            <img src="avengers.jpg" alt="First Image">
-            <div class="img-info">
-                <div class="img-title">Avengers-Endgame</div>
-                <div class="img-description">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins.</div>
-                <button class="pressable-button">More info</button>
+    <div class="container">
+        <div class="imagebox">
+            <img src="avengers.jpg" alt="avenger"> <!--This is the first big free picture-->
+            <div class="info">
+                <div class="title">Avengers-Endgame</div> <!--The title of the movie-->
+                <div class="description">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins.</div><!--The description of the movie-->
+                <button class="pressbtn">More info</button>
             </div>
         </div>
         
-        <table class="image-table">
+        <table class="image-table"> <!---This is the table to place the other images in a bautiful manner-->
             <tr>
                 <td>
-                    <!-- Second column with two images -->
-                    <div class="image-div">
-                        <img src="lone-gunmen.jpg" alt="Second Image 1">
-                        <div class="img-info">
-                            <div class="img-title">The lone gunmen</div>
-                            <div class="im  g-description">The X-Files' Lone Gunmen, their action-loving man-childish sidekick and patron.</div>
-                            <button class="pressable-button">More info</button>
-                        </div>
+                    
+                    <div class="imagebox"><!--The divs to spearate one image from the other-->
+                        <img src="lone-gunmen.jpg" alt="lone gunmen">
+                        <div class="info">
+                            <div class="title">The lone gunmen</div>
+                            <div class="description">The X-Files' Lone Gunmen, their action-loving man-childish sidekick and patron.</div>
+                            <button class="pressbtn">More info</button>
+                        </div> <!--above are the title description button of for the image-->
                     </div>
                 </td>
                 <td>
-                    <div class="image-div">
-                        <img src="millenium.jpg" alt="Second Image 2">
-                        <div class="img-info">
-                            <div class="img-title">Millenium Trilogy</div>
-                            <div class="img-description"> is about Mikael Blomkvist and Lisbeth Salander defending themselves against </div>
-                            <button class="pressable-button">More info</button>
+                    <div class="imagebox">
+                        <img src="millenium.jpg" alt="Millenium">
+                        <div class="info">
+                            <div class="title">Millenium Trilogy</div>
+                            <div class="description"> is about Mikael Blomkvist and Lisbeth Salander defending themselves against </div>
+                            <button class="pressbtn">More info</button>
                         </div>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <!-- Third column with two images -->
-                    <div class="image-div">
-                        <img src="predators.jpg" alt="Third Image 1">
-                        <div class="img-info">
-                            <div class="img-title">Predators</div>
-                            <div class="img-description">Predators is a film that follows an ensemble cast </div>
-                            <button class="pressable-button">More info</button>
+                    <!--this is the second row of 2 pictures-->
+                    <div class="imagebox">
+                        <img src="predators.jpg" alt="predators">
+                        <div class="info">
+                            <div class="title">Predators</div>
+                            <div class="description">Predators is a film that follows an ensemble cast </div>
+                            <button class="pressbtn">More info</button>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <div class="image-div">
-                        <img src="rage.jpg" alt="Third Image 2">
-                        <div class="img-info">
-                            <div class="img-title">Rage</div>
-                            <div class="img-description">Paul Maguire and his buddies Kane and Danny live a life of crime. </div>
-                            <button class="pressable-button">More info</button>
+                    <div class="imagebox">
+                        <img src="rage.jpg" alt="rage">
+                        <div class="info">
+                            <div class="title">Rage</div>
+                            <div class="description">Paul Maguire and his buddies Kane and Danny live a life of crime. </div>
+                            <button class="pressbtn">More info</button>
                         </div>
                     </div>
                 </td>
