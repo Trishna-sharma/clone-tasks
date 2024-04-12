@@ -24,10 +24,11 @@ header {
 .image-section {
     display: flex;
     flex-wrap: wrap;
+    margin-left:40px
 }
 
 .image-section img {
-    max-width: 100%;
+    max-width: 400px;
     height: auto;
     margin: 10px;
 }
